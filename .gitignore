@@ -106,3 +106,5 @@ venv.bak/
 lena_*.png
 delta.png
 *.jpg
+*.mp4
+frame*.png
