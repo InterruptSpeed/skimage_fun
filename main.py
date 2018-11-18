@@ -12,7 +12,7 @@ inp_image = imread("lena.png")
  
 #parameter 1: path where the image has to be saved.
 #parameter 2: the array of the image.
-imsave("new_lena.png",inp_image)
+imsave("lena_new.png",inp_image)
 
 #imshow(inp_image,'matplotlib')
 #show()
@@ -53,3 +53,12 @@ thresh = threshold_otsu(img_gray)
 binary_thresh_img = img_gray > thresh
  
 imsave("lena_thresh.png", img_as_uint(binary_thresh_img))
+
+# image delta
+
+image1 = imread("lena.png")
+image2 = imread("lena.png")
+#image3 = image1 - gray2rgb(image2)
+image3 = image1 - image2
+
+imsave("delta.png", image3)
